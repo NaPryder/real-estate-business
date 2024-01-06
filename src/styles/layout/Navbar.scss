@@ -1,0 +1,55 @@
+#nav-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: $grey-10;
+  // padding: 20px max(var(--layout-side-padding), 5%);
+  justify-content: space-between;
+
+  padding: 20px max(162px, 8%);
+
+  @include media('<=laptop') {
+    padding: 20px max(80px, 5%);
+  }
+
+  @include media('<=tablet') {
+    padding: 20px max(16px, 5%);
+
+  }
+
+  >#menu-container {
+    display: flex;
+    gap: 30px;
+
+    @include media('<=laptop') {
+      gap: 15px;
+    }
+
+    @include media('<=tablet') {
+      display: none;
+    }
+
+
+    >.nav-link {
+      @extend button;
+      padding: 14px 24px;
+      background: none;
+      border: none;
+    }
+
+    >.active,
+    .nav-link:hover {
+      border-radius: 10px;
+      border: 1px solid $grey-15;
+      background: $grey-08;
+      // border: 3px solid green;
+      // background: pink;
+    }
+  }
+
+  #button-contact-us {
+    background-color: $grey-08;
+    padding: 14px 20px;
+  }
+}

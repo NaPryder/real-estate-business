@@ -1,0 +1,115 @@
+@mixin logo-default-size() {
+  width: 20.7rem;
+  height: 3.6rem;
+}
+
+@mixin circle-large-for-background($width, $height, $color) {
+  width: $width;
+  height: $height;
+  background-color: $color;
+  border-radius: 50%;
+}
+
+@mixin base-star() {
+  width: 14px;
+  height: 13px;
+  @include media('<=tablet') {
+    width: 8px;
+    height: 8px;
+  }
+}
+
+@mixin set-default-section($backgroundColor) {
+  width: 100%;
+  background-color: $backgroundColor;
+}
+
+@mixin set-default-section-container($max-width: $content-max-width) {
+  max-width: $max-width;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@mixin reset-text-style() {
+  h1,
+  h2,
+  h3 {
+    font-family: $font-jakata;
+    letter-spacing: -0.025em;
+    // text-transform: none;
+  }
+
+  h1 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 120%;
+  }
+
+  h2 {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 120%;
+  }
+
+  h3 {
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 150%;
+    color: $gray-secondary;
+  }
+
+  p,
+  li {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: $gray-secondary;
+  }
+
+  a {
+    font-size: 16px;
+    text-decoration: none;
+    color: $bright-blue;
+    cursor: pointer;
+  }
+
+  strong {
+    margin: 0;
+  }
+
+  hr {
+    margin: 0;
+  }
+}
+
+@mixin reset-html-to-new-design() {
+  font-family: $font-inter;
+  color: $gray-primary;
+  box-sizing: border-box;
+
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+
+  border: 1px solid rgb(234, 234, 234);
+
+  @include reset-text-style();
+}
+
+@mixin set-tablet-margin($top: 32px, $right: 16px, $bottom: 32px, $left: 16px) {
+  margin-top: $top;
+  margin-bottom: $bottom;
+  margin-left: $left;
+  margin-right: $right;
+}
+
+@mixin set-desktop-margin($top: 71px, $right: auto, $bottom: 71px, $left: auto) {
+  margin-top: $top;
+  margin-bottom: $bottom;
+  margin-left: $left;
+  margin-right: $right;
+}

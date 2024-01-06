@@ -1,0 +1,16 @@
+#root {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  box-sizing: border-box;
+
+  /* background-color: pink; */
+}
+
+body {
+  background-color: var(--grey-08);
+  display: flex;
+  justify-content: center;
+}

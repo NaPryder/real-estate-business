@@ -1,0 +1,87 @@
+body {
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  // margin-right: auto;
+  font-family: $main-font;
+  color: $absolute-white;
+  background-color: $grey-08;
+
+}
+
+#root {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+a {
+  color: $absolute-white;
+  font-size: 18px;
+  text-decoration: none;
+
+  @include media('<=laptop') {
+    font-size: 14px;
+  }
+
+  @include media('<=tablet') {
+    font-size: 12px;
+  }
+}
+
+p {
+  color: $grey-60;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 150%;
+
+  @include media('<=laptop') {
+    font-size: 16px;
+  }
+
+  @include media('<=tablet') {
+    font-size: 14px;
+  }
+
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 18px 24px;
+  font-size: 18px;
+  color: $absolute-white;
+  border-radius: 10px;
+  background-color: $grey-15;
+  border: 1px solid $grey-15;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $grey-20;
+    border: 1px solid $grey-20;
+  }
+
+  &.primary {
+    background-color: $purple-60;
+
+    &:hover {
+      background-color: $purple-65;
+      border: 1px solid $purple-65;
+    }
+  }
+
+  @include media('<=laptop') {
+    padding: 14px 20px;
+    font-size: 14px;
+    border-radius: 8px;
+
+  }
+}

@@ -1,0 +1,30 @@
+#top-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin: 18px 0;
+
+  @include media('<=laptop') {
+    gap: 6px;
+    margin: 14px;
+  }
+
+  @include media('<=tablet') {
+    gap: 6px;
+    margin: 40px 16px 20px;
+  }
+
+  >p {
+    color: $absolute-white;
+
+    @include media('<=laptop') {
+      font-size: 14px;
+    }
+
+    @include media('<=tablet') {
+      font-size: 12px;
+    }
+  }
+
+}
