@@ -51,6 +51,29 @@ p {
 
 }
 
+h1 {
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+
+  @include media('<=laptop') {
+    font-size: 38px;
+  }
+}
+
+h2 {
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+
+  @include media('<=laptop') {
+    font-size: 30px;
+  }
+
+}
+
 button {
   display: flex;
   justify-content: center;

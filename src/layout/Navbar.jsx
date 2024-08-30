@@ -44,13 +44,13 @@ export default function Navbar() {
         >
           Find Mentor
         </ScrollLink> */}
-        <NavLink className="nav-link" to="/" reloadDocument>
+        <NavLink className="nav-link" to="/">
           Home
         </NavLink>
         <NavLink className="nav-link" to="/about-us">
           About Us
         </NavLink>
-        <NavLink className="nav-link" to="properties">
+        <NavLink className="nav-link" to="/properties">
           Properties
         </NavLink>
         <NavLink className="nav-link" to="/service">

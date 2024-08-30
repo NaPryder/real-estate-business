@@ -12,8 +12,13 @@
 @import './layout/app.scss';
 @import './layout/TopBanner.scss';
 @import './layout/Navbar.scss';
+@import './layout/Layout.scss';
 // @import './layouts/Footer.scss';
 
 
-// // layout
-// @import './layouts/layout.scss';
+// components
+@import './components/CoutingCardItem.scss';
+
+
+// pages
+@import './pages/Home.scss'
